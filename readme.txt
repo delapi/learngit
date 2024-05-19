@@ -4,3 +4,5 @@ Git has a mutable index called stage.
 Let me try again.
 oh oh oh oh oh?
 do a deer a female deer!
+what the fuck!
+liaoxuefeng sucks!
