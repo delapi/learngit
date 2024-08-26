@@ -58,8 +58,8 @@ for i in range(1):
         movie['star'] = star
         movies.append(movie)
         print(movie, file=qy)
-con = pymysql.connect(host='localhost', user='root', password='7137902pyf', database='yufei',\
-                      port=3306, charset='utf8')
+con = pymysql.connect(host='localhost', user='root',\
+                      port=3306, charset='utf8') #password和database正式连接也需要写
 print('连接成功->')
 cursor = con.cursor()
 print('开始创建表->')
