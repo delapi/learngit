@@ -26,8 +26,7 @@ if __name__ == '__main__':
         page_text = requests.get(url=new_url,headers=headers,verify=False).text
         tree = etree.HTML(page_text)
         li_list = tree.xpath('//div[@class="image_div"]')
-        print(li_list)
-'''        for li in li_list:
+        for li in li_list:
             src = li.xpath('./p/a/img/@src')[0]
             src_list.append(src)
             img_name = li.xpath('./p/a/img/@alt')[0] + str(pageNum) + '.png'
@@ -38,4 +37,4 @@ if __name__ == '__main__':
         img_path = 'picLibs/' + img_name_list[i]
         with open(img_path, 'wb') as fp:
             fp.write(img_data)
-            print(img_name_list[i] + '下载成功！')'''
+            print(img_name_list[i] + '下载成功！')
